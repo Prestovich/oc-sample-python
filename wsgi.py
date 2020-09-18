@@ -3,11 +3,7 @@ application = Flask(__name__)
 
 @application.route("/")
 def hello():
-    return '<h1> Hellow World !! </h1>
-            <a href="../ben"Benny</a>
-            <a href="../hum">Humbee</a>
-            <a href="../bo">Boeing</a>
-            <a href="../bob">Bob</a>'
+    return 'Hello World!'
     
 @application.route("/hum")
 def humbe():
@@ -17,9 +13,9 @@ def humbe():
 def humbe():
     return "Hello Benny!"
 
-@application.route("/hum")
+@application.route("/rh")
 def humbe():
-    return "Hello Humberto!"
+    return "Red Hat loves LINUX!"
 
 @application.route("/bob")
 def bob():
