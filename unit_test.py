@@ -23,4 +23,7 @@ class TestHello(unittest.TestCase):
         self.assertEqual(rv.data, b'Thanks Boeing for allowing us to work with you!!')
 
 if __name__ == '__main__':
+    import xmlrunner
+    runner = xmlrunner.XMLTestRunner( output='test-reports')
+    unittest.main(testRunner=runner)
     unittest.main()
