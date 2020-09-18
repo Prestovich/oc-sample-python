@@ -5,25 +5,14 @@ application = Flask(__name__)
 def hello():
     return 'Hello World!'
     
-@application.route("/hum")
-def humbe():
-    return "Hello Humberto!"
-
-@application.route("/ben")
-def humbe():
-    return "Hello Benny!"
-
 @application.route("/rh")
-def humbe():
-    return "Red Hat loves LINUX!"
+def redhat():
+    return "Red Hat loves linux"
 
-@application.route("/bob")
-def bob():
-    return "Hi Bob!"
 
 @application.route("/bo")
 def boeing():
-    return "Thank you boeing!"
+    return "Thanks Boeing for allowing us to work with you!!"
 
 if __name__ == "__main__":
     application.run()
