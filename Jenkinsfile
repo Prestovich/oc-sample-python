@@ -1,5 +1,5 @@
 pipeline {
-  agent { docker { image 'python:3.7.2' } }
+  agent { docker { image 'python:3.7.2' }  } //agent type or label "pod"
   stages {
     stage('build') {
       steps {
